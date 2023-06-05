@@ -15,10 +15,9 @@ axiosInstance.interceptors.request.use((config) => {
     return config
   }
   if (!token) {
-    // eslint-disable-next-line no-undef
     window.location.href = '/login'
   }
-  // eslint-disable-next-line no-param-reassign
+
   config.headers.Authorization = token
 
   return config
@@ -29,6 +28,7 @@ axiosInstance.interceptors.response.use(
   (err) => {
     if (!err.response) {
       toast.error('Network error!')
+      console.log('error')
     }
     if (err && err.response && err.response.status === 401) {
       if (err.response.data && err.response.data.message) {

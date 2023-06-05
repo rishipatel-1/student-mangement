@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import React, { useEffect, useState } from 'react'
 import { Toaster } from 'react-hot-toast'
-import getLoginDetails from '../../../utils/getLoginDetails'
+import getLoginDetails from '../../../utils/getLoginDetails.js'
 import signUp from '../../../api/signUp'
 
 const Register: React.FC = () => {

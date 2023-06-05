@@ -1,6 +1,6 @@
 import React from 'react'
 import { redirect } from 'react-router-dom'
-import getLoginDetails from './getLoginDetails'
+import getLoginDetails from './getLoginDetails.js'
 
 export interface DecodedType {
   id: string

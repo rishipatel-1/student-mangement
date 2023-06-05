@@ -1,6 +1,6 @@
 import axiosInstance from '../config/axiosInstance'
 
-const validateToken = async (payload) => {
+const validateToken = async (payload: any) => {
   axiosInstance(`/validate?token=${payload}`, {
     method: 'GET'
   })

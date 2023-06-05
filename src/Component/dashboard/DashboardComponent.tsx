@@ -103,7 +103,7 @@ const DashboardComponent: React.FC = () => {
                           value={formik.values.title}
                           onChange={formik.handleChange}
                         />
-                        {formik.errors.title === 'true'
+                        {formik.errors.title != null
                           ? (
                           <div className="error">{formik.errors.title}</div>
                             )
@@ -117,7 +117,7 @@ const DashboardComponent: React.FC = () => {
                           value={formik.values.description}
                           onChange={formik.handleChange}
                         ></textarea>
-                        {formik.errors.description === 'true'
+                        {formik.errors.description != null
                           ? (
                           <div className="error">{formik.errors.description}</div>
                             )
